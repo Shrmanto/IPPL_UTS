@@ -7,6 +7,11 @@ class TestPengolahData(unittest. TestCase):
         UrutanData = urutan_data(Result)
         self.assertEqual(UrutanData, [1, 3, 4, 6, 8, 9, 10])
 
+    def test_urutan_data_2(self):
+        Result = [6,3,4,1,8,10,9]
+        UrutanData = urutan_data(Result)
+        self.assertEqual(UrutanData, [3, 6, 9, 10, 8, 4, 1])
+
     def test_panjang_data(self):
         Result = [6,3,4,1,8,10,9]
         PanjangData = panjang_data(Result)
